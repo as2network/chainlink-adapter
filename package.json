@@ -2,6 +2,7 @@
   "name": "@as2network/chainlink-adapter",
   "version": "0.1.0",
   "description": "Chainlink Integration adapter.",
+  "types": "./types/*.d.ts",
   "keywords": [
     "Chainlink",
     "LINK",

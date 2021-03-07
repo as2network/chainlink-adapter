@@ -2,7 +2,7 @@
   "name": "@as2network/chainlink-adapter",
   "version": "0.1.0",
   "description": "Chainlink Integration adapter.",
-  "types": "./types/*.d.ts",
+  "types": "dist/index.d.ts",
   "keywords": [
     "Chainlink",
     "LINK",
@@ -11,7 +11,6 @@
     "as2"
   ],
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],

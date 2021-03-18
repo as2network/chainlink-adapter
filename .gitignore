@@ -2,4 +2,6 @@
 **/node_modules/*
 !node_modules/@chainlink/external-adapter/**
 !**/node_modules/@chainlink/external-adapter
-
+*.zip
+*.log
+*.tar.gz

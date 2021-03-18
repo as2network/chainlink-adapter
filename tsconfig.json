@@ -1,9 +1,15 @@
 {
   "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
     "outDir": "dist",
-    "rootDir": "src",
-    "typeRoots": ["../node_modules/@types", "../typings", "./typings"]
+    "sourceMap": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "include": ["src/**/*"],
-  "exclude": ["dist", "**/*.spec.ts", "**/*.test.ts"]
+  "include": ["src/**/*.ts", "tests/**/*.ts"],
+  "exclude": ["node_modules", ".vscode"]
 }

@@ -47,6 +47,6 @@
   "dependencies": {
     "@chainlink/contracts": "^0.1.6",
     "@chainlink/ea-bootstrap": "^0.1.3",
-    "axios": "^0.19.2"
+    "axios": "^0.21.1"
   }
 }

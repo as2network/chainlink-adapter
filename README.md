@@ -1,5 +1,7 @@
 # AS2 Network Chainlink External Adapter
 
+[![nodejs](https://github.com/as2network/chainlink-adapter/actions/workflows/nodejs.yml/badge.svg)](https://github.com/as2network/chainlink-adapter/actions/workflows/nodejs.yml)
+
 ## Input Params
 
 - `base`, `from`, or `coin`: The symbol of the currency to query
@@ -20,6 +22,11 @@
 ```
 
 ## Building
+
+```bash
+npm ci
+npm run build
+```
 
 ## License
 

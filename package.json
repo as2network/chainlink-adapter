@@ -1,8 +1,8 @@
 {
   "name": "@as2network/chainlink-adapter",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Chainlink Integration adapter.",
-  "types": "dist/index.d.ts",
+  "types": "types/index.d.ts",
   "keywords": [
     "Chainlink",
     "LINK",
@@ -22,11 +22,11 @@
   "scripts": {
     "prepublishOnly": "yarn build && yarn test:unit",
     "setup": "yarn build",
-    "build": "tsc -b",
-    "lint": "eslint --ignore-path ../.eslintignore . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint --ignore-path ../.eslintignore . --ext .js,.jsx,.ts,.tsx --fix",
-    "test": "mocha --exit --timeout 3000 -r ts-node/register 'test/**/*.test.ts'",
-    "test:unit": "mocha --exit --grep @integration --invert -r ts-node/register 'test/**/*.test.ts'",
+    "build": "npx tsc -b",
+    "lint": "npx eslint --ignore-path ../.eslintignore . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "npx eslint --ignore-path ../.eslintignore . --ext .js,.jsx,.ts,.tsx --fix",
+    "test": "npx mocha --exit --timeout 3000 -r ts-node/register 'test/**/*.test.ts'",
+    "test:unit": "npx mocha --exit --grep @integration --invert -r ts-node/register 'test/**/*.test.ts'",
     "test:integration": "mocha --exit --timeout 3000 --grep @integration -r ts-node/register 'test/**/*.test.ts'",
     "server": "node -e 'require(\"./index.js\").server()'",
     "server:dist": "node -e 'require(\"./dist/index.js\").server()'",

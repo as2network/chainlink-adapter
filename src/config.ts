@@ -1,5 +1,5 @@
 import { Requester } from '@chainlink/external-adapter';
-import { Config } from '@chainlink/types';
+import { Config } from './types';
 
 export const DEFAULT_ENDPOINT = 'feed.as2.network';
 

@@ -1,5 +1,5 @@
 import { Requester, Validator } from '@chainlink/external-adapter';
-import { ExecuteWithConfig, Config } from '@chainlink/types';
+import { ExecuteWithConfig, Config } from '../types';
 
 export const NAME = 'as2network';
 

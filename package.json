@@ -20,8 +20,6 @@
   },
   "license": "MIT",
   "scripts": {
-    "prepublishOnly": "yarn build && yarn test:unit",
-    "setup": "yarn build",
     "build": "npx tsc -b",
     "lint": "npx eslint --ignore-path ../.eslintignore . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "npx eslint --ignore-path ../.eslintignore . --ext .js,.jsx,.ts,.tsx --fix",
@@ -30,7 +28,7 @@
     "test:integration": "mocha --exit --timeout 3000 --grep @integration -r ts-node/register 'test/**/*.test.ts'",
     "server": "node -e 'require(\"./index.js\").server()'",
     "server:dist": "node -e 'require(\"./dist/index.js\").server()'",
-    "start": "yarn server:dist"
+    "start": "npm run-script server:dist"
   },
   "devDependencies": {
     "@chainlink/external-adapter": "^0.2.6",

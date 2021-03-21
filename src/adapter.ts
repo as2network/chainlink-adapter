@@ -1,5 +1,5 @@
 import { Requester, Validator, AdapterError } from '@chainlink/external-adapter';
-import { Config, ExecuteWithConfig, ExecuteFactory } from '@chainlink/types';
+import { Config, ExecuteWithConfig, ExecuteFactory } from './types';
 import { makeConfig, DEFAULT_ENDPOINT } from './config';
 import { as2network } from './endpoint';
 
